@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #58bcfe;
+}
+
+.search_by {
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-list {
+    margin-top: 20px;
+    background-color: #5ebcf3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.item-list form {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-list form select,
+.item-list form input[type="text"] {
+    width: auto;
+    max-width: 100%;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.item-list form textarea {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.item-list form:last-child {
+    border-bottom: none;
+}
+
+.item-list form label {
+    font-weight: bold;
+}
+
+.item-list form button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.item-list form button[name="insert_item"] {
+    background-color: blueviolet;
+}
+
+.item-list form button[name="generate_report"] {
+    background-color: orangered;
+}
+
+.item-list form button[name="search"] {
+    background-color: black;
+}
+
+.item-list form button[name="delete_btn"] {
+    background-color: black;
+}
+
+.item-list form button[name="reset"] {
+    background-color: red;
+}
+
+.item-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.item-list th,
+.item-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.item-list th {
+    background-color: #62e3e3;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item-list th a {
+    text-decoration: none;
+    color: #000;
+}
+
+.item-list th a:hover {
+    color: #4caf50;
+}
+
+.item-list tr:last-child td {
+    border-bottom: none;
+    text-align: center;
+}
+
+.item-list img {
+    width: 100px;
+    height: 75px;
+}
+
+.item-list textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.item-list .no-records {
+    text-align: center;
+    padding: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container form {
+    display: flex;
+    align-items: center;
+}
+
+.form-container button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.edit-list {
+    margin-top: 20px;
+    background-color: #aff3b2;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.edit-list label {
+    font-weight: bold;
+}
+
+.edit-list input[type="text"],
+.edit-list textarea,
+.edit-list input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.edit-list textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.edit-list input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-list input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.edit-list .error-message {
+    color: red;
+    margin-top: 5px;
+}

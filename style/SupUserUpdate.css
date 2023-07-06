@@ -1,0 +1,522 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "Roboto", "Arial", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.page_title {
+    font-size: 40px;
+    display: block;
+    position: relative;
+    top: -55px;
+    width: 350px;
+    right: 10px;
+}
+
+form {
+    top: 200px;
+    left: 40%;
+    position: absolute;
+}
+
+/* for top right icon effect */
+.min_icon {
+    display: flex;
+    margin-left: 10px;
+    flex: 0.3;
+}
+
+.icon_btn {
+    height: 35px;
+    width: 110px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+.icon_btn:hover {
+    background: #ff9d00;
+}
+
+.staff {
+    margin-left: 40px;
+    padding-top: 68px;
+}
+
+.home {
+    padding-top: 68px;
+    margin-left: 30px;
+}
+
+.logout {
+    margin-left: 30px;
+    padding-top: 68px;
+}
+
+/*all menu property*/
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(48, 220, 255);
+}
+
+/*side menu*/
+.hamburger-menu {
+    margin: 40px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* side menu's bar */
+.bar {
+    display: block;
+    width: 49px;
+    height: 6px;
+    margin: 4px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* web page title */
+.company-name {
+    font-size: 50px;
+    font-weight: 700;
+    display: block;
+    margin-left: 20px;
+    margin-top: 12px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 2px rgb(116, 116, 116);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* hamburger menu and social media icon's hint, opacity default 0 */
+.tip {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    font-size: 13px;
+    right: 0;
+    left: 0;
+    color: white;
+    border: 1px solid rgba(196, 196, 196, 0.2);
+    border-radius: 3px;
+    background-color: gray;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    opacity: 0;
+    padding: 4px;
+    bottom: -60px;
+}
+
+.hamburger-menu:hover .tip {
+    opacity: 1;
+}
+
+.nav-choice {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-choice a {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 4px 4px 2px gray;
+}
+
+.nav-choice a:hover {
+    color: rgb(5, 255, 1);
+}
+
+
+.side-social-media a {
+    position: relative;
+}
+
+.side-social-icon {
+    height: 45px;
+    margin: 25px;
+}
+
+/*side menu under hamburger icon,  default hide*/
+.side-bar {
+    position: fixed;
+    top: 110px;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(48, 220, 255);
+    z-index: 200;
+    left: -100%;
+    transition: all 0.15s ease-in-out;
+    z-index: 999;
+}
+
+/*for javascript to toggle when click the hamburger*/
+.side-bar.active_bar {
+    left: 0;
+}
+
+.side-bar-link {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar-link a {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    margin-top: 50px;
+    text-shadow: 4px 4px 2px gray;
+    color: #ffffff;
+}
+
+.side-bar-link a:hover {
+    color: rgb(5, 255, 1);
+}
+
+/* status of hambuger manul change to cross*/
+.hamburger-menu.active_bar .bar:nth-child(1) {
+    transform: translate(0, 9px) rotate(45deg);
+}
+
+.hamburger-menu.active_bar .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active_bar .bar:nth-child(3) {
+    transform: translate(0, -9px) rotate(-45deg);
+}
+
+/* for user information form effect */
+.user_info {
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 400px;
+    height: 780px;
+    padding-left: 45px;
+    padding-bottom: 20px;
+    background: rgb(255, 187, 0);
+}
+
+input {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.user_id label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#userID {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.user_name label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#name {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.user_contact label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#contact {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.user_email label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#email {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user_email label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.user_warehouseAddress label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 350px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#warehouseAddress {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+/* different button effect */
+
+.edit-btn {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    bottom: 22px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(70, 80, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+}
+
+.edit-btn:hover {
+    background: #9b9b9b;
+}
+
+.edit-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.submit_info-btn {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 204);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+    left: 245px;
+    top: 704px;
+    display: none;
+    position: absolute;
+}
+
+.submit_info-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.submit_info-btn:hover {
+    background-color: #a5a5a5;
+}
+
+.container-edit_btn {
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+/* update password form effect */
+
+.passwd_container {
+    display: none;
+    position: absolute;
+    top: 300px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #c9c9c9;
+    border-radius: 10px;
+}
+
+/* password button effect */
+
+#current_pswd,
+#new_pswd,
+#confirm_New_pswd {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+}
+
+#current_pswd:focus,
+#new_pswd:focus,
+#confirm_New_pswd:focus {
+    background-color: #d3d3d3;
+    outline: none;
+}
+
+.submit-pw-btn {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(0, 174, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+}
+
+.submit-pw-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.resetPswd {
+    position: absolute;
+    text-align: left;
+    margin-top: 73px;
+    padding: 10px;
+    width: 120px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(0, 174, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.3s all;
+    display: block;
+}
+
+.resetPswd:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.resetPswd:hover {
+    background-color: #979797;
+}
+
+.cancel-info-btn {
+    position: absolute;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 22px;
+    left: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(70, 80, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.3s all;
+    display: none;
+}
+
+.cancel-info-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.cancel-info-btn:hover {
+    background: #8f8f8f;
+}
+
+.cancel-btn {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(70, 80, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+}
+
+.cancel-btn {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+    margin-left: 140px;
+}
+
+.submit-btn:hover {
+    background: #8f8f8f;
+}
+
+.cancel-btn:hover {
+    background: #8a8a8a;
+}
+
+.update_paswd {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.reminder {
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    display: none;
+}
+
+.pswd_reminder {
+    display: block;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

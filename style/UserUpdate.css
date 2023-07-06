@@ -1,0 +1,356 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "Roboto", "Arial", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.page_title {
+    font-size: 40px;
+    display: block;
+    position: relative;
+    top: -55px;
+    width: 350px;
+    right: 10px;
+}
+
+form {
+    top: 200px;
+    left: 40%;
+    position: absolute;
+}
+
+/* web page title */
+.company-name {
+    font-size: 50px;
+    font-weight: 700;
+    display: block;
+    margin-left: 20px;
+    margin-top: 12px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 2px rgb(116, 116, 116);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* for user information form effect */
+.user_info {
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 400px;
+    height: 780px;
+    padding-left: 45px;
+    padding-bottom: 20px;
+    background: rgb(255, 187, 0);
+}
+
+input {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.user_id label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#userID {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.user_name label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#name {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.user_contact label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#contact {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.user_email label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#email {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user_email label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 100px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.user_warehouseAddress label {
+    font-weight: bold;
+    font-size: 25px;
+    width: 350px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+#warehouseAddress {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+/* different button effect */
+
+.edit-btn {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    bottom: 22px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(70, 80, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+}
+
+.edit-btn:hover {
+    background: #9b9b9b;
+}
+
+.edit-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.submit_info-btn {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 204);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+    left: 245px;
+    top: 704px;
+    display: none;
+    position: absolute;
+}
+
+.submit_info-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.submit_info-btn:hover {
+    background-color: #a5a5a5;
+}
+
+.container-edit_btn {
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+/* update password form effect */
+
+.passwd_container {
+    display: none;
+    position: absolute;
+    top: 300px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #c9c9c9;
+    border-radius: 10px;
+}
+
+/* password button effect */
+
+#current_pswd,
+#new_pswd,
+#confirm_New_pswd {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+}
+
+#current_pswd:focus,
+#new_pswd:focus,
+#confirm_New_pswd:focus {
+    background-color: #d3d3d3;
+    outline: none;
+}
+
+.submit-pw-btn {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(0, 174, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+}
+
+.submit-pw-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.resetPswd {
+    position: absolute;
+    text-align: left;
+    margin-top: 73px;
+    padding: 10px;
+    width: 120px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(0, 174, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.3s all;
+    display: block;
+}
+
+.resetPswd:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.resetPswd:hover {
+    background-color: #979797;
+}
+
+.cancel-info-btn {
+    position: absolute;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 22px;
+    left: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(70, 80, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.3s all;
+    display: none;
+}
+
+.cancel-info-btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.cancel-info-btn:hover {
+    background: #8f8f8f;
+}
+
+.cancel-btn {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(70, 80, 255);
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    transition: 0.3s all;
+}
+
+.cancel-btn {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+    margin-left: 140px;
+}
+
+.submit-btn:hover {
+    background: #8f8f8f;
+}
+
+.cancel-btn:hover {
+    background: #8a8a8a;
+}
+
+.update_paswd {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.reminder {
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    display: none;
+}
+
+.pswd_reminder {
+    display: block;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

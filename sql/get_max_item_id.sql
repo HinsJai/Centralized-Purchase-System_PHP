@@ -1,0 +1,4 @@
+SELECT
+    MAX(ITEMID)
+FROM
+    ITEM;

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../checking"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Latest_merge_4523PHP"
+	}
+}

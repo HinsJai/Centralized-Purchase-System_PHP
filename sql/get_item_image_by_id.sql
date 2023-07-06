@@ -1,0 +1,6 @@
+SELECT
+    IMAGEFILE
+FROM
+    ITEM
+WHERE
+    ITEMID = ?;

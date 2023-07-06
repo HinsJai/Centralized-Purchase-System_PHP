@@ -1,0 +1,210 @@
+* {
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+    /*text-decoration: none;*/
+    /*font-family: "Roboto", "Arial", sans-serif;*/
+    /*box-sizing: border-box;*/
+    /*outline: none;*/
+}
+
+table {
+    /*width: 95%;*/
+    /*text-align: center;*/
+    /*border-collapse: collapse;*/
+    /*border: none;*/
+    /*color: black;*/
+}
+
+.page_title {
+    display: inline-block;
+}
+
+/*.search-container {*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    top: 10px;*/
+/*    left: 50%;*/
+/*}*/
+
+/*#content {*/
+/*    margin-top: 10px;*/
+/*    !* width: auto; *!*/
+/*}*/
+
+.itemDescribtion {
+    /*overflow: auto;*/
+    /*width: 30%;*/
+    /*padding: 20px;*/
+    /*height: 100%;*/
+}
+
+/*.add_Qty {*/
+/*    width: 80px;*/
+/*    height: 20px;*/
+/*}*/
+
+/*.add_item_btn {*/
+/*    width: 80px;*/
+/*    height: 30px;*/
+/*    margin-left: 10px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.9em;
+    margin-left: 2%;
+    margin-right: 8%;
+    border-style: inset;
+    border-color: black;
+    border-width: 1px;
+}
+
+/*#table,*/
+/*th,*/
+/*td {*/
+/*    border: none;*/
+
+/*}*/
+
+/*table th {*/
+/*    background: rgb(125, 214, 255);*/
+/*    color: rgb(0, 0, 0);*/
+/*}*/
+
+/* for product list search effect */
+
+.search {
+    /*display: block;*/
+    /*float: right;*/
+}
+
+.search_bar {
+    /*height: 30px;*/
+    /*border: 2px solid;*/
+}
+
+.search_bar input {
+    /*height: 18px;*/
+}
+
+* input::placeholder {
+    /*padding-left: 10px;*/
+}
+
+.search_btn {
+    /*width: 35px;*/
+    /*padding: 2px;*/
+    /*height: 32px;*/
+    /*cursor: pointer;*/
+    /*margin-right: 20px;*/
+}
+
+/*.searchBy {*/
+/*    !*height: 30px;*!*/
+/*    !*margin-right: 20px;*!*/
+/*    !*border: 2px solid;*!*/
+/*}*/
+
+/*.sort_btn {*/
+/*    width: 40px;*/
+/*    height: 33px;*/
+/*    padding: 1px;*/
+/*    margin-right: 20px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.sort-order {*/
+/*    height: 32px;*/
+/*    border: 2px solid;*/
+/*}*/
+
+/*.history_title {*/
+/*    background-color: #b8bbbb;*/
+/*}*/
+
+.search {
+    /*margin-bottom: 20px;*/
+    /*display: block;*/
+    /*float: right;*/
+}
+
+/* web page title */
+/*.company-name {*/
+/*    font-size: 50px;*/
+/*    font-weight: 700;*/
+/*    display: block;*/
+/*    margin-left: 20px;*/
+/*    margin-top: 10px;*/
+/*    color: rgb(255, 255, 255);*/
+/*    text-shadow: 4px 4px 2px rgb(116, 116, 116);*/
+/*    background-color: transparent;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.alert-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/*table th {*/
+/*    height: 40px;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*table img {*/
+/*    width: 80px;*/
+/*    margin-top: 5px;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.item_name {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+.price {
+    color: red;
+}
+
+/*.sort_button {*/
+/*    margin-left: 15px;*/
+/*    background: transparent;*/
+/*    border-color: white;*/
+/*}*/
+
+/*table {*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+/*.sort_button img {*/
+/*    width: 15px;*/
+/*}*/
+
+/*.productList {*/
+/*    !* display: inline-block; *!*/
+/*    position: absolute;*/
+/*    !* top: 400px; *!*/
+/*    left: 100px;*/
+/*    top: 220px;*/
+/*}*/
+
+/* .table_product,
+th,
+td {
+  width: 150px;
+  max-height: 150px;
+  left: 200px;
+} */
+
+/*.proudctList_title {*/
+/*    margin-bottom: 10px;*/
+/*    display: inline-block;*/
+/*    position: absolute;*/
+/*    top: -50px;*/
+/*}*/

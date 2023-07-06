@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  background: #c0c0c0;
+}
+
+.pw_reminder{
+  color: red;
+  background: #beb2ff;
+}
+
+.page_title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1900ff;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  padding-top: 15px;
+  background: #beb2ff;
+  height: 100px;
+  vertical-align: middle;
+}
+
+form {
+  top: 200px;
+  left: 40%;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 30px;
+  background: #beb2ff;
+  box-shadow: 6px 12px #7e7070b9;
+}
+
+/* login form title */
+h2 {
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  margin-bottom: 40px;
+  background: #beb2ff;
+}
+
+/* input box effect */
+
+.userID_title,
+.pswd_title {
+  margin-top: 20px;
+  font-size: 20px;
+  background: #beb2ff;
+}
+
+#userID,
+#pswd {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+  border-radius: 10px;
+}
+
+#userID:focus,
+#pswd:focus {
+  background-color: #d3d3d3;
+  outline: none;
+}
+
+/* role select function */
+
+.role_container {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  width: 400px;
+  background: #beb2ff;
+}
+
+.suppplier_select {
+
+  padding-top: 15px;
+  background: #beb2ff;
+}
+
+.purchase_select {
+  background: #beb2ff;
+}
+
+.suppplier_select,
+input {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.purchase_select,
+input {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* submit button effect */
+
+.submit-pw-btn {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: rgb(0, 174, 255);
+  border-radius: 15px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.25);
+  outline: none;
+  transition: 0.3s all;
+}
+
+.submit-pw-btn:active {
+  transform: scale(0.95);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.25);
+}
+
+.submit-pw-btn:hover {
+  background: #8f8f8f;
+}
