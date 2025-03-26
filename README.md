@@ -13,7 +13,7 @@ The Centralized Purchase System is a PHP-based project designed to streamline an
 ## Technology Stack
 - **Backend:** PHP, Python
 - **Frontend:** HTML, CSS, JavaScript
-- **Database:** MySQL (or any other database system you are using)
+- **Database:** MySQL
 - **Styling:** CSS
 
 
